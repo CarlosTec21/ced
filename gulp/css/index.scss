@@ -1,0 +1,279 @@
+$blanco: #ffffff;
+$negro: #000000;
+$negro20: #202020;
+$gris: #ededed;
+$gris_oscuro: #666666;
+$gris34: #343434;
+$grisd1: #d1d1d1;
+$azul: #1c467e;
+$dot_inactivo: #b3b3b3;
+$link: #1c467e;
+
+.fondo_azul{ background-color: $azul;}
+.pnova {font-family: 'ProximaNova';}
+.pnovab {font-family: 'ProximaNova-Bold';}
+p.bold, .bold{
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: 'ProximaNova';
+        src:url('../fonts/ProximaNovaRegular.eot');
+        src:url('../fonts/ProximaNovaRegular.woff') format('woff'),
+        url('../fonts/ProximaNovaRegular.ttf') format('truetype'),
+        url('../fonts/ProximaNovaRegular.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ProximaNova-Bold';
+        src:url('../fonts/FontsFree-Net-Proxima-Nova-Bold.eot');
+        src:url('../fonts/FontsFree-Net-Proxima-Nova-Bold.woff') format('woff'),
+        url('../fonts/FontsFree-Net-Proxima-Nova-Bold.ttf') format('truetype'),
+        url('../fonts/FontsFree-Net-Proxima-Nova-Bold.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+        src:url('../fonts/Montserrat-Regular.eot');
+        src:url('../fonts/Montserrat-Regular.woff') format('woff'),
+        url('../fonts/Montserrat-Regular.ttf') format('truetype'),
+        url('../fonts/Montserrat-Regular.otf') format('opentype'),
+        url('../fonts/Montserrat-Regular.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat-Bold';
+        src:url('../fonts/Montserrat-Bold.eot');
+        src:url('../fonts/Montserrat-Bold.woff') format('woff'),
+        url('../fonts/Montserrat-Bold.ttf') format('truetype'),
+        url('../fonts/Montserrat-Bold.otf') format('opentype'),
+        url('../fonts/Montserrat-Bold.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Sacramento-Regular';
+        src:url('../fonts/Sacramento-Regular.eot');
+        src:url('../fonts/Sacramento-Regular.woff') format('woff'),
+        url('../fonts/Sacramento-Regular.ttf') format('truetype'),
+        url('../fonts/Sacramento-Regular.otf') format('opentype'),
+        url('../fonts/Sacramento-Regular.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Source Sans Pro';
+    font-weight: 300;
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+.container{
+    width: 80%;
+}
+
+.div_button{
+    margin: 30px 0;
+}
+
+.buttons{
+    font-family: 'ProximaNova';
+    text-transform: uppercase;
+    font-size: 1.2em;
+    padding: 6px 50px;
+    margin: 20px 0;
+}
+
+.buttons_minis{
+    font-family: 'ProximaNova';
+    text-transform: uppercase;
+    font-size: 1.2em;
+    padding: 6px 30px;
+    margin: 20px 0;
+}
+
+.button_black{
+    color: $negro;
+    border: 2px solid $negro;
+}
+
+.button_white{
+    color: $blanco;
+    border: 2px solid $blanco;
+}
+
+.button_blue{
+    color: $blanco;
+    font-family: 'ProximaNova';
+    text-transform: uppercase;
+    font-size: 0.7em;
+    padding: 6px 30px;
+    margin: 20px 0;
+    background-color: $azul;
+}
+
+h2{
+    font-family: 'ProximaNova';
+    font-size: 28px;
+    font-weight: 600;
+}
+
+h3{
+    font-family: 'ProximaNova';
+    font-size: 22px;
+    font-weight: 600;
+    margin: 14px 0;
+}
+
+h4{
+    font-family: 'ProximaNova';
+    font-size: 28px;
+    font-weight: 600;
+    margin: 40px 20px;
+    color: $blanco;
+    line-height: normal;
+}
+
+h5{
+    font-family: 'ProximaNova-Bold';
+    font-size: 1.1em;
+}
+p.psize20{
+    font-family: 'Source Sans Pro';
+    font-size: 18px;
+    font-weight: 300;
+}
+/*p{
+    font-family: 'Source Sans Pro';
+    font-size: 16px;
+    line-height: normal;
+}*/
+.material-icons.azul{
+    color: $azul;
+}
+
+
+/* SOCIOS */
+#socios{
+    background-color: $negro20;
+    color: $blanco;
+
+    .row{
+        margin-bottom: 0;
+    }
+
+    img{
+        width: 70%;
+    }
+}
+
+.slider_socios{
+    margin: 30px 0;
+}
+
+.circle{
+    border: 2px solid $blanco;
+}
+/* END SOCIOS */
+
+
+/*PAGINADOR*/
+.paginador {
+    margin: 0;
+	padding: 0;
+	width: 100%;
+	display: inline-block;
+	font-size:16px;
+    color: #fff;
+    text-align: center;
+}
+.paginador a.jp-current,
+a.jp-current:hover {
+    background: #848484;
+    color:#fff;
+    font-weight: bold;
+}
+
+.paginador a,
+.paginador span {
+    font-size: 14px;
+    cursor: pointer;
+    margin: 0 5px;
+	color: #000;
+	padding: 3px 8px;
+	display: inline-block;
+	vertical-align: middle;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.paginador a:hover {
+    background-color: #000;
+    color: #FFF;
+    opacity: 0.5;
+}
+
+.paginador a.jp-previous { margin-right: 15px;border: 1px solid #fff;padding: 6px 29px;}
+.paginador a.jp-next { margin-left: 15px;border: 1px solid #fff;padding: 3px 8px;}
+
+.paginador a.jp-current,
+a.jp-current:hover {
+    color: #fff;
+    background: #000!important;
+}
+
+.paginador a.jp-disabled,
+a.jp-disabled:hover {
+    color: rgba(255, 255, 255, 0.74);
+    display: none;
+}
+
+.paginador a.jp-current,
+a.jp-current:hover,
+.paginador a.jp-disabled,
+a.jp-disabled:hover {
+    cursor: default;
+    background: none;
+}
+
+.paginador span { margin: 0 5px; }
+
+a.jp-first,a.jp-last {
+    display: none;
+}
+/* END PAGINADOR*/
+
+
+/*
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 767px) {
+
+    .container{
+        width: 100%;
+    }
+
+    .buttons{
+        font-size: 1.1em;
+        padding: 6px 30px;
+        margin: 15px 0;
+    }
+}
+
+@import "menu";
+@import "home";
+@import "pages";
+@import "footer";

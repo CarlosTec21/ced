@@ -1,0 +1,184 @@
+header{
+    padding: 0 25px;
+    font-family: 'ProximaNova';
+    position: fixed;
+    width: 100%;
+    height: 90px;
+    z-index: 10;
+    @media(max-width: 992px){
+        padding: 0 15px;
+    }
+
+    &.solid{
+        background-color: $negro;
+    }
+
+    .content-nav{
+        height: 100%;
+        position: relative;
+
+        nav{
+            height: 100%;
+        }
+    }
+}
+
+nav .brand-logo{
+    position: relative;
+    &.mobile,
+    &.tablet{
+        display: none;
+    }
+    @media(max-width: 450px){
+        &.desk{
+            display: none;
+        }
+        &.mobile{
+            display: block;
+        }
+    }
+}
+
+nav .nav-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul a:hover{
+    color: $blanco;
+    background-color: $gris34;
+}
+
+.sidenav-trigger{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+nav, nav .nav-wrapper i, nav a.sidenav-trigger, nav a.sidenav-trigger i{
+    background-color: transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    height: 20px;
+    line-height: 16px;
+
+    ul{
+        li > ul{
+            padding: 0;
+        }
+
+        a{
+            padding: 8px;
+        }
+    }
+}
+
+nav a.dropdown-trigger{
+    outline: none;
+    &:active,
+    &:visited,
+    &:focus{
+        outline: none;
+    }
+}
+
+.modal{
+    width: 30%;
+}
+
+.sidenav-overlay{
+    z-index: 0;
+}
+
+i.right{
+    margin-left: 0;
+}
+
+.dropdown-content{
+    background-color: $gris34;
+    width: 250px !important;
+    height: auto !important;
+    top: 56px !important;
+
+    li{
+        &:hover{
+            background-color: transparent;
+        }
+        > a{
+            color: $blanco;
+            &:hover{
+                background-color: #4c4c4c;
+            }
+        }
+    }
+}
+
+.divider{
+    background-color: $blanco;
+}
+
+.button_menu{
+    margin-left: 20px;
+    background-color: $blanco;
+    color: $negro;
+    text-transform: uppercase;
+    padding: 8px 20px;
+}
+
+.sidenav{
+    width: 100%;
+    background-color: $negro;
+    li > a{
+        color: $blanco;
+        font-size: 1.4em;
+        outline: 0;
+
+        > i.material-icons{
+            color: $blanco;
+        }
+    }
+}
+
+
+.desplegable{
+    background-color: $gris34;
+    display: none;
+    ul > li{
+        padding: 8px;
+
+        > a{
+            font-size: 1.2em;
+            line-height: 25px;
+        }
+    }
+}
+
+.menu-close{
+    height: 45px;
+    padding-top: 20px;
+    padding-right: 20px;
+
+    a > i{
+        color: $blanco;
+    }
+}
+
+#header{
+    position: relative;
+}
+
+.logo_think {
+    a{
+        img{
+            height: 60px;
+            @media(max-width: 450px){
+                height: 42px;
+            }
+            @media(max-width: 350px){
+                height: 35px;
+            }
+        }
+    }
+}

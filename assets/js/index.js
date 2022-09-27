@@ -1,0 +1,1 @@
+"use strict";$(document).ready(function(){var t="https://egade.csf.itesm.mx/ci/ced/";$("#main-header").load(t+"menu.html"),$("#header").load(t+"menu.html"),$("#footer").load(t+"footer.html"),$(".nosotros_tabs").tabs(),$(".item_tabs").tabs()});

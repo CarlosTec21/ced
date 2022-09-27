@@ -1,0 +1,60 @@
+footer.page-footer{
+    background-color: $negro;
+    color: $blanco;
+    font-family: 'ProximaNova';
+
+    .footer-copyright{
+        background-color: $gris34;
+        padding: 0%;
+        .row{
+            margin-bottom: 4px ;
+            margin-top: 4px;
+        }
+    }
+
+    a{
+        color: $blanco;
+        text-decoration: none;
+    }
+
+    .logo{
+        max-width: 100%;
+        max-height: 40px;
+        margin-top: 1rem;
+    }
+
+    ul{
+        display: flex;
+        margin-right: 54px;
+
+        li{
+            padding: 0 10px;
+        }
+    }
+
+    #formulario{
+        .container{
+            padding-top: 15px;
+            background-color: $blanco !important;
+            color: $negro;
+        }
+        a{
+            color: $azul;
+        }
+        .aviso_form{
+            padding-bottom: 30px;
+        }
+    }
+}
+
+footer p{
+    font-family: 'Source Sans Pro';
+    font-size: 1em;
+    line-height: 16px;
+    margin: 6px 0;
+
+    img{
+        margin-right: 5px;
+    }
+}
+
